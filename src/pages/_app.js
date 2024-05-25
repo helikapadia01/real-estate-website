@@ -1,7 +1,7 @@
 import "@/styles/globals.scss";
 import "@/styles/reset.css";
 import Script from "next/script";
-import { ScrollControlProvider } from "@/context/ScrollControlContext";
+import { ScrollControlProvider } from "../../context/ScrollControlContext";
 
 export default function App({ Component, pageProps }) {
   return (
