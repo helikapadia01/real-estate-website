@@ -111,7 +111,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
+      <title>
           Discover Luxury Living in Dubai with Altair Real Estate - Your Gateway
           to Exceptional Properties
         </title>
@@ -226,7 +226,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className={styles.recommendation}>
+          <section className={styles.recommendation} >
             <div className={styles.recomContent}>
               <div className={styles.titleRow}>
                 <h1 className={styles.title}>Recomended house for you</h1>
