@@ -1,0 +1,666 @@
+@import "../base.scss";
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.innerContainer {
+  width: 100%;
+  height: 80vh;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  border: 0.1rem solid $color-brownish-gray;
+
+  .innerRight {
+    width: 50%;
+    max-width: 45%;
+    margin: auto;
+    height: 100%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    p {
+      font-size: large;
+    }
+
+    h1 {
+      font-size: 4.688rem;
+      font-weight: bold;
+      height: max-content;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 300;
+    }
+
+    button {
+      width: max-content;
+      height: max-content;
+      color: $color-base;
+      background-color: $color-grayBase;
+      padding: 1rem 1rem 1rem 1rem;
+      font-size: 1.1rem;
+      animation: expand 0.8s ease forwards;
+      transition: all 0.8s ease;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .innerLeft {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 0 !important;
+      object-fit: fill;
+      border-radius: 0 2rem 2rem 0;
+    }
+  }
+}
+
+.experience {
+  width: 100%;
+  height: 40vh;
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .left {
+      width: 50%;
+      height: 100%;
+      font-size: 3rem;
+      font-weight: 500;
+      padding: 0 0 0 1rem;
+    }
+
+    .right {
+      width: 50%;
+      height: 100%;
+
+      .grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: 10px;
+
+        .gridItem {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .count {
+            font-size: 2.5rem;
+            margin: 0 0 0.3rem 0;
+          }
+
+          p {
+            font-size: large;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.features {
+  width: 100%;
+  height: max-content;
+  background-color: $color-light-gray;
+
+  .content {
+    width: 100%;
+    height: 70vh;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7rem 0 7rem 0;
+
+    .leftContent {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0 !important;
+        object-fit: cover;
+      }
+    }
+
+    .rightContent {
+      width: 50%;
+      max-width: 45%;
+      margin: auto;
+      height: 100%;
+      max-height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      p {
+        font-size: larger;
+        font-weight: 500;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        height: max-content;
+      }
+
+      .buttonGrid {
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: flex-start;
+        gap: 3rem;
+
+        .buttons {
+          width: max-content;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .buttonTitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            animation: expand 0.8s ease forwards;
+            transition: all 0.8s ease;
+
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+
+          span {
+            font-size: 1.5rem;
+            margin: 0 0 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.recommendation {
+  width: 100%;
+  height: max-content;
+  color: $color-base;
+  background-color: $color-dark-slate-gray;
+
+  .recomContent {
+    width: 100%;
+    height: max-content;
+    max-width: 95%;
+    margin: auto;
+    padding: 5rem 0 5rem 0;
+
+    .titleRow {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 1rem 0;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .seeMoreBtn {
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        font-size: larger;
+        color: $color-base;
+        background-color: transparent;
+
+        span {
+          margin: 0 0 0 1rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .recomGrid {
+      width: 100%;
+      height: max-content;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      justify-content: space-between;
+      margin: 3rem 0 3rem 0;
+
+      .cardItem {
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 600px !important;
+          height: 400px !important;
+          z-index: 0 !important;
+          object-fit: fill;
+        }
+
+        .cardContent {
+          width: 100%;
+          height: max-content;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .contentRow {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 1.5rem 0 1rem 0;
+
+            .titleCotent {
+              font-size: 2rem;
+              font-weight: 500;
+            }
+
+            .pricing {
+              font-size: 2rem;
+              font-weight: 500;
+            }
+          }
+
+          .location {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 0 1rem 0;
+            font-size: medium;
+            font-weight: 300;
+
+            span {
+              margin: 0 0.3rem 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .innerContainer {
+    width: 100%;
+    height: 100vh;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 0.1rem solid $color-brownish-gray;
+    font-family: $font-family;
+
+    .innerRight {
+      width: 100%;
+      max-width: 90%;
+      margin: auto;
+      height: 100%;
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+
+      p {
+        font-size: large;
+      }
+
+      h1 {
+        font-size: 2.3rem;
+        font-weight: bold;
+        height: max-content;
+      }
+
+      h2 {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      button {
+        width: max-content;
+        height: max-content;
+        color: $color-base;
+        background-color: $color-grayBase;
+        padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+      }
+    }
+
+    .innerLeft {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0 !important;
+        object-fit: fill;
+        border-radius: 0 0 1rem 1rem;
+      }
+    }
+  }
+
+  .experience {
+    width: 100%;
+    height: max-content;
+    margin: 5rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      width: 100%;
+      max-width: 90%;
+      margin: auto;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .left {
+        width: 100%;
+        height: max-content;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 2rem 0 2rem 0;
+        text-align: center;
+      }
+
+      .right {
+        width: 50%;
+        height: 100%;
+
+        .grid {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          grid-template-columns: auto;
+          align-items: center;
+          justify-content: center;
+          gap: 3rem;
+          padding: 2rem 0 2rem 0;
+
+          .gridItem {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .count {
+              font-size: 2rem;
+              margin: 0 0 0.3rem 0;
+            }
+
+            p {
+              font-size: medium;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .features {
+    width: 100%;
+    height: max-content;
+    background-color: $color-light-gray;
+
+    .content {
+      width: 100%;
+      height: 100vh;
+      max-width: 95%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 7rem 0 7rem 0;
+
+      .leftContent {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          z-index: 0 !important;
+          object-fit: cover;
+        }
+      }
+
+      .rightContent {
+        width: 100%;
+        max-width: 95%;
+        margin: auto;
+        height: 100%;
+        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 2rem 0 2rem 0;
+
+        p {
+          font-size: larger;
+          font-weight: 500;
+        }
+
+        h1 {
+          font-size: 1.7rem;
+          font-weight: bold;
+          height: max-content;
+        }
+
+        .buttonGrid {
+          width: 100%;
+          height: max-content;
+          display: grid;
+          grid-template-columns: auto auto;
+          align-items: flex-start;
+          gap: 3rem;
+
+          .buttons {
+            width: max-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .buttonTitle {
+              font-size: 1.3rem;
+              font-weight: 300;
+              animation: expand 0.8s ease forwards;
+              transition: all 0.8s ease;
+
+              &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+              }
+            }
+
+            span {
+              font-size: 1.5rem;
+              margin: 0 0 0 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recommendation {
+    width: 100%;
+    height: max-content;
+    color: $color-base;
+    background-color: $color-dark-slate-gray;
+
+    .recomContent {
+      width: 100%;
+      height: max-content;
+      max-width: 95%;
+      margin: auto;
+      padding: 5rem 0 5rem 0;
+
+      .titleRow {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 1rem 0;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+          font-size: 1.4rem;
+        }
+
+        .seeMoreBtn {
+          display: none;
+        }
+      }
+
+      .recomGrid {
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-auto-flow: column; /* This makes the grid items flow horizontally */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        overflow-x: auto;
+        gap: 30px;
+        justify-content: space-between;
+        margin: 3rem 0 3rem 0;
+
+        .cardItem {
+          width: max-content;
+          height: max-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 300px !important;
+            height: 200px !important;
+            z-index: 0 !important;
+            object-fit: fill;
+          }
+
+          .cardContent {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .contentRow {
+              width: 100%;
+              height: max-content;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              margin: 1rem 0 1rem 0;
+
+              .titleCotent {
+                font-size: 1rem;
+                font-weight: 500;
+              }
+
+              .pricing {
+                font-size: 1rem;
+                font-weight: 500;
+              }
+            }
+
+            .location {
+              width: 100%;
+              height: max-content;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin: 0 0 0.7 0;
+              font-size: small;
+              font-weight: 300;
+
+              span {
+                font-size: small;
+                margin: 0 0.3rem 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

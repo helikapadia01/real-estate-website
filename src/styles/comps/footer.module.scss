@@ -1,0 +1,255 @@
+@import "../base.scss";
+
+.footer {
+  width: 100%;
+  height: 100vh;
+
+  .content {
+    width: 100%;
+    height: 100%;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contact {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .ftTitle {
+        font-size: 4rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .desc {
+        font-size: larger;
+        font-weight: 300;
+        margin: 0 0 1rem 0;
+      }
+
+      .btnRow {
+        width: 50%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 2rem 0 0 0;
+
+        .outlineBtn {
+          width: max-content;
+          height: max-content;
+          color: $color-grayBase;
+          border: 0.1rem solid $color-grayBase;
+          background-color: transparent;
+          padding: 1rem 1.5rem 1rem 1.5rem;
+          font-size: larger;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .fillBtn {
+          width: max-content;
+          height: max-content;
+          color: $color-base;
+          background-color: $color-grayBase;
+          padding: 1rem 1.5rem 1rem 1.5rem;
+          font-size: larger;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 0.1rem;
+      background-color: $color-grayBase;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+
+    .row {
+      width: 100%;
+      height: max-content;
+      margin: 1rem 0 1rem 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: 200px !important;
+        height: 100px !important;
+        z-index: 0 !important;
+        object-fit: contain;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 30px;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+
+        .linkGridItem {
+          width: max-content;
+          height: max-content;
+          list-style: none;
+          font-size: larger;
+          font-weight: 500;
+
+          li {
+            list-style: none;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    height: 100vh;
+
+    .content {
+      width: 100%;
+      height: 100%;
+      max-width: 95%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .contact {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .ftTitle {
+          font-size: 2rem;
+          margin: 0 0 1rem 0;
+        }
+
+        .desc {
+          font-size: medium;
+          font-weight: 300;
+          margin: 0 0 1rem 0;
+        }
+
+        .btnRow {
+          width: 50%;
+          height: max-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          margin: 2rem 0 0 0;
+
+          .outlineBtn {
+            width: 190px;
+            height: max-content;
+            color: $color-grayBase;
+            border: 0.1rem solid $color-grayBase;
+            background-color: transparent;
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            font-size: larger;
+            margin: 0 0 2rem 0;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .fillBtn {
+            width: 190px;
+            height: max-content;
+            color: $color-base;
+            background-color: $color-grayBase;
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            font-size: larger;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 0.1rem;
+        background-color: $color-grayBase;
+        margin: 0.5rem 0 0.5rem 0;
+      }
+
+      .row {
+        width: 100%;
+        height: max-content;
+        margin: 1rem 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 200px !important;
+          height: 100px !important;
+          z-index: 0 !important;
+          object-fit: contain;
+        }
+
+        .grid {
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          gap: 20px;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          justify-items: center;
+          justify-self: center;
+          margin: 0 0 2rem 0;
+
+          .linkGridItem {
+            width: max-content;
+            height: max-content;
+            list-style: none;
+            font-size: larger;
+            font-weight: 500;
+
+            li {
+              list-style: none;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
